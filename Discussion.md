@@ -26,8 +26,8 @@ Step 3:
 Write Extracted Logs to an Output File
 ->We store the filtered log lines in a new file (output_{date}.txt).
 ->To avoid excessive disk writes (which slow down performance), we use:
-   >Buffered writing: Writing in chunks rather than one line at a time.
-   >Appending instead of reopening the file each time.
+   Buffered writing: Writing in chunks rather than one line at a time.
+   Appending instead of reopening the file each time.
 
 
 Step 4: 
@@ -53,10 +53,15 @@ Optimization 2: Multi-Threading for Parallel Processing
 How to Use the Script
 ->Save the script as extract_logs.py
 ->Run from the terminal:
-python extract_logs.py /path/to/logfile.txt 2025-02-26
+  >python extract_logs.py /path/to/logfile.txt 2025-02-26
 
 ->Output file will be created as:
-output/output_2025-02-26.txt
+   >output/output_2025-02-26.txt
+
+
+
+
+
 
 
 
